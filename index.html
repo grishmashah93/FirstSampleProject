@@ -1,73 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Login</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-        .login-container {
-            background-color: white;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
-        }
-        input[type="text"], input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        input[type="submit"] {
-            padding: 10px 20px;
-            background-color: #28a745;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            cursor: pointer;
-            width: 100%;
-        }
-        input[type="submit"]:hover {
-            background-color: #218838;
-        }
-    </style>
+	<style>
+			#div-1 {
+				background: linear-gradient(to top right, #FFFFFF, #0000FF);
+				}
+
+			#div-2 {
+				background: linear-gradient(to bottom left, #FFFFFF, #0000FF);
+				}
+
+			div {
+				margin-bottom: 10px;
+				height: 200px;
+				width: 300px;
+				}
+	</style>
+ 
+	<script>
+		JavaScript
+	</script>
 </head>
+
 <body>
-
-<div class="login-container">
-    <h2>Login</h2>
-    <form id="loginForm">
-        <input type="text" id="username" placeholder="Username" required><br>
-        <input type="password" id="password" placeholder="Password" required><br>
-        <input type="submit" value="Login">
-    </form>
-</div>
-
-<script>
-    document.getElementById("loginForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
-
-        if (username === "admin" && password === "admin") {
-            alert("Login Successful");
-            document.body.innerHTML = "<h1>Login Successful</h1>";
-        } else {
-            alert("Invalid Username or Password");
-        }
-    });
-</script>
-
+	<div id="div-1"></div>
+	<div id="div-2"></div>
 </body>
+
 </html>
+
